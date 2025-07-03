@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8d8c8c;
+    font-family: Arial, sans-serif; 
+        width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.keywordStructure{
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.keywordConatiner{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border:1px solid #0e0e0e;
+    background: #9e9b9b;
+    padding: 10px;
+
+}
+.top , .secondRow , .thirdRow , .fourthRow , .fifthRow , .sixthRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+}
+.left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.keys{
+    width: 50px;
+    height: 50px;
+    background-color: #0e0e0e;
+    border: 1px solid #ccc;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.prt{
+    width: 60px;
+}
+.top>.keys {
+    height: 25px;
+}
+
+
+.backspace{
+    width: 90px;
+    height: 50px;
+}
+.tab{
+    width: 75px;
+    height: 50px;
+}
+.caps{
+    width: 90px;
+    height: 50px;
+}
+.enter{
+    width: 110px;
+    height: 50px;
+}
+.shiftLeft{
+    width: 120px;
+    height: 50px;
+}
+.shiftRight{
+    width: 150px;
+    height: 50px;
+}
+.space{
+    width: 300px;
+    height: 50px;
+}
+.rightMiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     gap: 10px;
+}.rightMiddle > .R1 ,.R2 , .R3 , .R4 , .R5 , .R6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.zero{
+    width: 110px;
+    height: 50px;
+}
+.special{
+    width: 50px;
+    height: 110px;
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+}

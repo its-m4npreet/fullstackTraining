@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>day_4</title>
     <style>
-        div{
+        /* div{
             width: 50%;
             height: 200px;
             border: 1px solid black;
-
+            display: flex;
         }
         .para{
-            /* background: b+lue; */
+            background: blue;
             font-size: 20px;
             text-align: center;
             font-weight: bold;
+        }
+        div>p{
+            background: red;
+        }
+        div> p+h1{
+            background: yellow;
         }
         #btn{
             width: 100px;
@@ -26,14 +32,42 @@
             border-radius: 10px;
             border: none;
             cursor: pointer;
+        } */
+
+        .container{
+            display: flex;
+            gap: 10px;
+            /* background: #000; */
+            border: 1px solid black;
+            width: 700px;
+            flex-wrap: wrap;
+        }
+        /* .container{ */
+            /* display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+         */
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
         }
     </style>
 </head>
 <body >
-    <div>
+    <!-- <div >
         <p class="para">i am paragraph</p>
         <h1 class="para">i am h1 tag</h1>
         <button id="btn"> click</button>
+    
+    </div> -->
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
     </div>
      
     
