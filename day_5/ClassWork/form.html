@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      #parent {
+        width: 25%;
+        height: 500px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        margin: auto;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      }
+
+      input {
+        padding: 10px;
+        margin-top: 30px;
+        width: 90%;
+      }
+      #btn {
+        margin-top: 40px;
+        width: 50%;
+        padding: 10px;
+        font-size: 17px;
+        font-weight: 600px;
+        background-color: green;
+        color: aliceblue;
+        border: none;
+      }
+      input:focus {
+        background-color: rgb(182, 179, 179);
+      }
+      #btn:hover {
+        background-color: rgb(8, 105, 8);
+        font-weight: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <form action="">
+        <input type="text" id="username" placeholder="username" />
+        <input type="email" id="email" placeholder="@gmail.com" />
+        <input type="password" id="password" placeholder="password" />
+        <input
+          type="password"
+          id="confirmpassword"
+          placeholder="confirmpassword"
+        />
+        <button id="btn">submit</button>
+      </form>
+    </div>
+  </body>
+</html>

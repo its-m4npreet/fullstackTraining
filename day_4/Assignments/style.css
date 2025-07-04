@@ -6,24 +6,22 @@
 body{
     background-color: #8d8c8c;
     font-family: Arial, sans-serif; 
-    display: flex;
-    justify-content: center;
-    align-items: center;   
 }
-.keywordStructure{
-    margin-top: 100px;
+/* .keywordStructure{
      display: flex;
     justify-content: center;
     align-items: center; 
-}
+} */
 
 .keywordConatiner{
     display: flex;
+    width: 90%;
     justify-content: center;
     gap: 10px;
     border:1px solid #0e0e0e;
     background: #9e9b9b;
     padding: 10px;
+    margin: 100px auto;
 
 }
 .top , .secondRow , .thirdRow , .fourthRow , .fifthRow , .sixthRow{
@@ -34,6 +32,7 @@ body{
     gap: 10px;
 }
 .left{
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +97,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
     gap: 10px;
 }
 .right{

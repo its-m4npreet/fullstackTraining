@@ -1,0 +1,91 @@
+      :root{
+            --primary-color:teal;
+            --secondry-color:yellow;
+            --third-color:pink;
+            --fouth-color:rgb(34, 190, 34);
+            --fifth-color:darkgreen;
+            --sixth-color:aqua;
+            --seventh-color:black;
+            --eightth-color: rgb(56, 54, 54);
+            --ninth-color:rgb(10, 10, 134);
+            --tenth-color:rgb(58, 7, 7);
+            --eleventh-color:darkgoldenrod;
+            --tweleveth-color: rgb(97, 13, 13);
+            --thirteenth-color:rgb(151, 38, 57);
+            --fourteenth-color:gray;
+
+        }
+      #parent {
+        margin: auto;
+        width: 85%;
+        height: 600px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
+        border-radius: 26px;
+      }
+      .box {
+        border: 2px solid black;
+        border-radius: 1rem;
+      }
+      #parent > div:nth-child(1) {
+        background:var(--primary-color) ;
+        grid-area: 1/1/2/2;
+      }
+      #parent > div:nth-child(2) {
+        background: var(--secondry-color);
+        grid-area: 1/2/2/4;
+      }
+      #parent > div:nth-child(3) {
+        background: var(--third-color);
+      }
+      #parent > div:nth-child(4) {
+        background: var(--fouth-color);
+        grid-area: 2/3/4/5;
+      }
+      #parent > div:nth-child(5) {
+        background: var(--fifth-color);
+      }
+      #parent > div:nth-child(6) {
+        background: var(--sixth-color);
+      }
+      #parent > div:nth-child(7) {
+        background: var(--seventh-color);
+        grid-area: 3/1/6/2;
+      }
+      #parent > div:nth-child(8) {
+        background:var(--eightth-color);
+      }
+      #parent > div:nth-child(9) {
+        background: var(--ninth-color);
+        grid-area: 4/2/7/3;
+      }
+      #parent > div:nth-child(10) {
+        background: var(--tenth-color);
+      }
+      #parent > div:nth-child(11) {
+        background: var(--eleventh-color);
+        grid-area: 4/4/7/5;
+      }
+      #parent > div:nth-child(12) {
+        background:var(--tweleveth-color);
+      }
+      #parent > div:nth-child(13) {
+        /* background:black; */
+        background: var(--thirteenth-color);
+      }
+      #parent > div:nth-child(14) {
+        background: var(--fourteenth-color);
+      }
+
+
+    @media (max-width: 1000px) {
+        #parent {
+            grid-template-columns: repeat(3,1fr);
+        }
+        #parent > div:nth-child(1) {
+           background-color: aqua;
+        }
+    }
