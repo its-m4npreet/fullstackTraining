@@ -13,7 +13,7 @@ body{
     align-items: center; 
 } */
 
-.keywordConatiner{
+.keyboardConatiner{
     display: flex;
     width: 90%;
     justify-content: center;
