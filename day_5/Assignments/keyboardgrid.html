@@ -3,108 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>keyword_structure</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>keyword using grid</title>
+
     <style>
-        .keyboardConatiner{
-             display: flex;
-    width: 80%;
-    height: 300px;
-     border:1px solid #0e0e0e;
-    background: #9e9b9b;
-    padding: 10px;
-    gap:5px;
-    margin: 150px auto;
-        }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .keyboardConatiner {
+        display: flex;
+        width: 80%;
+        height: 300px;
+        border: 1px solid #0e0e0e;
+        background: #9e9b9b;
+        padding: 10px;
+        gap: 5px;
+        margin: 150px auto;
+      }
 
-        .right{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-             grid-template-rows: 20px repeat(5,1fr);
-            gap: 8px;
-            padding-top: 5px;
-        }
+      .right {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20px repeat(5, 1fr);
+        gap: 8px;
+        padding-top: 5px;
+      }
 
-    .keys{
-    background-color: #0e0e0e;
-    border: 1px solid #ccc;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 15px;
-}
-.left{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-}
-.left .keys{
-    width: 50px;
-    height: 48px;
-}
- .left .top ,.left .secondRow ,.left .thirdRow ,.left .fourthRow ,.left .fifthRow ,.left .sixthRow{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.left .top{
-    gap: 5px;
-}
-.top .prt{
-    width: 60px ;
-}
-.top>.keys {
-    height: 25px;
-}
+      .keys {
+        background-color: #0e0e0e;
+        border: 1px solid #ccc;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+      }
+      .left {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+      }
+      .left .keys {
+        width: 50px;
+        height: 48px;
+      }
+      .left .top,
+      .left .secondRow,
+      .left .thirdRow,
+      .left .fourthRow,
+      .left .fifthRow,
+      .left .sixthRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left .top {
+        gap: 5px;
+      }
+      .top .prt {
+        width: 60px;
+      }
+      .top > .keys {
+        height: 25px;
+      }
 
+      .secondRow .backspace {
+        width: 90px;
+      }
+      .thirdRow .tab {
+        width: 75px;
+      }
+      .fourthRow .caps {
+        width: 90px;
+      }
+      .fourthRow .enter {
+        width: 110px;
+      }
+      .fifthRow .shiftLeft {
+        width: 120px;
+      }
+      .fifthRow .shiftRight {
+        width: 150px;
+      }
+      .sixthRow .space {
+        width: 300px;
+      }
+      .right .top {
+        margin-top: -5px;
+      }
 
-.secondRow .backspace{
-    width: 90px;
-}
-.thirdRow .tab{
-    width: 75px;
-}
-.fourthRow .caps{
-    width: 90px;
-}
-.fourthRow .enter{
-    width: 110px;
-}
-.fifthRow .shiftLeft{
-    width: 120px;
-}
-.fifthRow .shiftRight{
-    width: 150px;
-}
-.sixthRow .space{
-    width: 300px;
-}
-.right .top{
-    margin-top: -5px;
-}.pluse{
-    grid-area: 3/4/5/5;
-}
-.specialEnter{
-    grid-area: 5/4/7/5;
-}.zero{
-    grid-area: 6/1/7/3;
-}
+      .right .keys {
+        padding: 0px 8px;
+      }
+      .right .pg {
+        padding: 0px;
+      }
+      .pluse {
+        grid-area: 3/4/5/5;
+      }
+      .specialEnter {
+        grid-area: 5/4/7/5;
+      }
+      .zero {
+        grid-area: 6/1/7/3;
+      }
+      .topkey {
+        font-size: 12px;
+      }
+      .arrow {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .arrow span {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .arrowUp {
+        border-bottom: 1px solid grey;
+      }
     </style>
   </head>
   <body>
     <div class="keyboardConatiner">
-       <div class="left">
+      <div class="left">
         <div class="top">
           <div class="keys topkey">ESC</div>
           <div class="keys topkey">F1</div>
@@ -116,12 +145,12 @@
           <div class="keys topkey">F7</div>
           <div class="keys topkey">F8</div>
           <div class="keys topkey">F9</div>
-          <div class="keys topkey ">F10</div>
+          <div class="keys topkey">F10</div>
           <div class="keys topkey">F11</div>
           <div class="keys topkey">F12</div>
           <div class="keys topkey prt">PRT SC</div>
-          <div class="keys topkey">on</div>
-          <div class="keys topkey">DELETE</div>
+          <div class="keys topkey">⏻</div>
+          <div class="keys topkey">DEL</div>
         </div>
 
         <div class="secondRow">
@@ -188,53 +217,48 @@
         <div class="sixthRow">
           <div class="keys">CTRL</div>
           <div class="keys">FN</div>
-          <div class="keys"><i class="ri-microsoft-fill"></i></div>
+          <div class="keys">⊞</div>
           <div class="keys">ALT</div>
           <div class="keys space">SPACE</div>
           <div class="keys">ALT GR</div>
           <div class="keys">CTRL</div>
-          <div class="keys"><i class="ri-arrow-left-s-line"></i></div>
+          <div class="keys">←</div>
           <div class="keys arrow">
-            <span class="arrowUp"><i class="ri-arrow-up-s-line"></i></span>
-            <span class="arrowDown"><i class="ri-arrow-down-s-line"></i></span>
+            <span class="arrowUp">↑</span>
+            <span class="arrowDown">↓</span>
           </div>
-          <div class="keys"><i class="ri-arrow-right-s-line"></i></div>
+          <div class="keys">→</div>
         </div>
       </div>
 
       <div class="right">
-        
-          <div class="keys top topkey">HOME</div>
-          <div class="keys top topkey">END</div>
-          <div class="keys top topkey">PG UP</div>
-          <div class="keys top topkey">PG DN</div>
-      
-       
-          <div class="keys">NUM</div>
-          <div class="keys">/</div>
-          <div class="keys">*</div>
-           <div class="keys">-</div>
-       
-          <div class="keys">7</div>
-          <div class="keys">8</div>
-          <div class="keys">9</div>
-           <div class="keys pluse">+</div>
-        
-          <div class="keys">4</div>
-          <div class="keys">5</div>
-          <div class="keys">6</div>
-       
-          <div class="keys">1</div>
-          <div class="keys">2</div>
-          <div class="keys">3</div>
-          <div class="keys specialEnter">
-            <i class="ri-corner-down-left-line"></i>
-          </div>
+        <div class="keys top topkey">HOME</div>
+        <div class="keys top topkey">END</div>
+        <div class="keys top topkey pg">PG UP</div>
+        <div class="keys top topkey pg">PG DN</div>
 
-          <div class="keys zero">0</div>
-          <div class="keys">.</div>
+        <div class="keys">NUM</div>
+        <div class="keys">/</div>
+        <div class="keys">*</div>
+        <div class="keys">-</div>
+
+        <div class="keys">7</div>
+        <div class="keys">8</div>
+        <div class="keys">9</div>
+        <div class="keys pluse">+</div>
+
+        <div class="keys">4</div>
+        <div class="keys">5</div>
+        <div class="keys">6</div>
+
+        <div class="keys">1</div>
+        <div class="keys">2</div>
+        <div class="keys">3</div>
+        <div class="keys specialEnter">⤶</div>
+
+        <div class="keys zero">0</div>
+        <div class="keys">.</div>
       </div>
-        
-      </div>
+    </div>
   </body>
 </html>
