@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      #parent {
+        width: 25%;
+        min-height: 500px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        margin: auto;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      }
+      label{
+        /* background: #000; */
+        /* text-align: start; */
+        margin-top: 30px;
+        margin-bottom: 10px;
+        float: left;
+      }
+      input {
+        padding: 10px;
+        /* margin-top: 30px; */
+        width: 90%;
+      }
+      #btn {
+        margin-top: 40px;
+        width: 50%;
+        padding: 10px;
+        font-size: 17px;
+        font-weight: 600px;
+        background-color: green;
+        color: aliceblue;
+        border: none;
+      }
+      input:focus {
+        background-color: rgb(182, 179, 179);
+      }
+      #btn:hover {
+        background-color: rgb(8, 105, 8);
+        font-weight: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <form action="" id="form">
+        <label for="username">name</label>
+        <input type="text" id="username" placeholder="username" />
+                <label for="email">email</label>
+
+        <input type="email" id="email" placeholder="@gmail.com" />
+                <label for="password">password</label>
+
+        <input type="password" id="password" placeholder="password" />
+                <label for="confirmpassword">confirmpassword</label>
+
+        <input
+          type="password"
+          id="confirmpassword"
+          placeholder="confirmpassword"
+        />
+  <button id="btn">submit</button>
+        <div class="userinfo" id="userinfo"></div>
+      
+      </form>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
