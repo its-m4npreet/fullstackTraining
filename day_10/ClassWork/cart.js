@@ -41,8 +41,16 @@ function showData(data) {
 }
 showData(CartData)
 function deleteFun(el, index) {
-    deletedCartData=CartData.splice(index, 1);
+  let  deletedCartData=CartData.splice(index, 1);
     console.log(deletedCartData)
     localStorage.setItem("CartData", JSON.stringify(CartData));
     showData(CartData);
+
+    // let deletedCartData = CartData.filter((item, i) => {
+    // console.log(item, i, index)
+    //     return i !== index;
+    // });
+    // console.log(deletedCartData)
+    // localStorage.setItem("CartData", JSON.stringify(deletedCartData));
+    // showData(deletedCartData);
 }
