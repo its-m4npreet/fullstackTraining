@@ -1,26 +1,22 @@
-const express = require('express');
-const port=require('./configs/port');
-const user=require('./models/user');
-// const {showUserInfo ,create,updateUser}=require('./routes/route');
-const createUser=require("./controllers/createUserController")
-const updateUser=require("../backend/controllers/updateUserController")
-const showUser=require("../backend/controllers/showUserController")
+const express = require("express");
+const connection = require("./configs/db.js");
 
-const deleteUser=require("../backend/controllers/deleteUserController")
+const userRoute = require("./routes/user.route.js");
+const app = express();
 
+// Middleware to parse JSON
+app.use(express.json());
 
-const app=express();
-updateUser(app)
-createUser(app)
-showUser(app)
-deleteUser(app)
+app.use(userRoute);
+const PORT =8080;
 
-
-
-
-
-
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-}   );
-
+app.listen(PORT, async () => {
+  try {
+    console.log("DB Connecting...");
+    await connection;
+    console.log("DB Connected!");
+  } catch (error) {
+    console.log("DB Connection Error:", error);
+  }
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
